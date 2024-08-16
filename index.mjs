@@ -26,7 +26,7 @@ app.use('/rap', rapRoutes);
 app.use('/rnb', rnbRoutes);
 
 app.get('/', (req, res) => {
-    res.send(`<div> this is my pop, rap and rnb root route <br/><a href='/pop'>Pop Songs</a><a href='/pop'>Rap Songs</a><a href='/pop'>RnB Songs</a></div>`);
+    res.send(`<div> this is my pop, rap and rnb root route <br/><a href='/pop'>Pop Songs</a><br/><a href='/pop'>Rap Songs</a><br/><a href='/pop'>RnB Songs</a></div>`);
 })
 
 app.listen(PORT, () => {
