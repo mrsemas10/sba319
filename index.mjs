@@ -6,7 +6,6 @@ import jsxViewEngine from 'jsx-view-engine';
 import methodOverride from 'method-override';
 import popRoutes from './controllers/pop.mjs'
 import rapRoutes from './controllers/rap.mjs'
-import rnbRoutes from './controllers/rnb.mjs'
 
 
 dotenv.config();
@@ -23,10 +22,9 @@ app.use(methodOverride('_method'));
 
 app.use('/pop', popRoutes);
 app.use('/rap', rapRoutes);
-app.use('/rnb', rnbRoutes);
 
 app.get('/', (req, res) => {
-    res.send(`<div> this is my pop, rap and rnb root route <br/><a href='/pop'>Pop Songs</a><br/><a href='/pop'>Rap Songs</a><br/><a href='/pop'>RnB Songs</a></div>`);
+    res.send(`<div> Pop and Rap Songs <br/><a href='/pop'>Pop Songs</a><br/><a href='/rap'>Rap Songs</a><br/></div>`);
 })
 
 app.listen(PORT, () => {
