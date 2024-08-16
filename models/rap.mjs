@@ -12,6 +12,6 @@ const rapSchema = new mongoose.Schema({
    favorite: Boolean 
 });
 
-const Pop = mongoose.model('Rap', rapSchema);
+const Rap = mongoose.model('Rap', rapSchema);
 
 export default Rap;
